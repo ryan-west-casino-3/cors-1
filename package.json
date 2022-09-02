@@ -1,0 +1,25 @@
+{
+  "name": "cors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonghwanWon/cors.git"
+  },
+  "author": "JonghwanWon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonghwanWon/cors/issues"
+  },
+  "homepage": "https://github.com/JonghwanWon/cors#readme",
+  "devDependencies": {
+    "vercel": "^28.1.0"
+  },
+  "dependencies": {
+    "http-proxy-middleware": "^2.0.6"
+  }
+}
