@@ -16,9 +16,9 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 const apiProxy = createProxyMiddleware({
   target: process.env.APP_URL,
   changeOrigin: true,
-  // pathRewrite: {
-  //   "^/api": "", // strip "/api" from the URL
-  // },
+  pathRewrite: {
+     "^/api": "", // strip "/api" from the URL
+   },
   onProxyRes(proxyRes) {
     // proxyRes.headers["x-added"] = "foobar"; // add new header to response
     // delete proxyRes.headers["x-removed"]; // remove header from response
